@@ -1,0 +1,28 @@
+.cont {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 10px 10px 10px 10px;
+}
+table {
+  width: 50%;
+}
+.tablecon {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+label.lab {
+  font-size: 19px;
+  padding: 12px;
+}
+
+.form-div {
+  border: 1px solid black;
+  padding: 20px 20px 20px 20px;
+}
