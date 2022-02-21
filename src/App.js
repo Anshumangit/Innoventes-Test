@@ -22,10 +22,10 @@ const App = () => {
   const getData = async () => {
     try {
       const resp = await fetch(`https://api.github.com/users/${query}/repos`);
-      console.log(resp);
+      // console.log(resp);
       if (resp.ok) {
         const data = await resp.json();
-        console.log(data);
+        // console.log(data);
         setPeople(data);
         setError('');
       } else {
@@ -42,12 +42,14 @@ const App = () => {
   return (
     <>
       <div className='cont'>
-        <form onSubmit={handleSubmit}>
-          <input type='text' value={value} onChange={inputChange} />
-          <button type='submit'>search</button>
-        </form>
+        <div className='form-div'>
+          <form onSubmit={handleSubmit}>
+            <input type='text' value={value} onChange={inputChange} />
+            <button type='submit'>search</button>
+          </form>
+        </div>
       </div>
-      <div className='cont'>
+      <div className='cont1'>
         <p style={{ color: 'red' }}>{error}</p>
       </div>
       <div className='tablecon cont'>

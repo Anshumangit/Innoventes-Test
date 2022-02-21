@@ -3,6 +3,11 @@
   justify-content: center;
   margin-top: 50px;
 }
+.cont1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 table,
 th,
 td {
